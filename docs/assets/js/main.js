@@ -1,12 +1,12 @@
 const pokemonHtml = document.getElementById("pokemon-list")
 const loadMoreButton = document.getElementById("loadMoreButton")
-const limit = 5
+const limit = 10
 let offset = 0
 
 
 
 
-function loadPokemonItens(offset = 0, limit = 10){
+function loadPokemonItens(){
 
     pokeApi.getPokemons().then((pokemonList = []) => {
         pokemonHtml.innerHTML += pokemonList.map((pokemon) =>
@@ -26,7 +26,7 @@ function loadPokemonItens(offset = 0, limit = 10){
     })
 }
 
-loadPokemonItens(offset, limit)
+loadPokemonItens()
 
 loadMoreButton.addEventListener('click', () =>{
     offset += limit
