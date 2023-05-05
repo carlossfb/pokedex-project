@@ -1,0 +1,41 @@
+*{
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f8fc;
+}
+
+.content{
+    padding: .5rem;
+    margin: .5rem auto;
+}
+ol{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+header, footer{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #307ba5;
+    color: #fff;
+}
+header{
+    height: 120px;
+    margin-bottom: .15rem;
+}
+footer{
+    height: 80px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+.logotipo {
+    width:15rem;
+}
+.logotipo img{
+    width:100%;
+    height: auto;
+}
