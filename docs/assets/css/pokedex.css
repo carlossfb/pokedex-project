@@ -116,6 +116,21 @@
     text-transform: capitalize;
 }
 
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#loadMoreButton{
+    border: none;
+    color: #fff;
+    background-color: #a040a0;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    cursor:pointer;
+    
+}
 .pokemons li img{
     width: auto;
     height:100%;
